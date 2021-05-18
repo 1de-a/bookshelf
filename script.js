@@ -1,8 +1,10 @@
 
 let myLibrary = [];
 let emptyText = "";
-let cleaner = document.createTextNode("");
-let clean;
+let i;
+let classNamer;
+let para;
+let output;
 
 function Book() {
 
@@ -28,8 +30,32 @@ function addNewBook() {
    
 
 
-   myLibrary.push({title,author,publisher})   
+   myLibrary.push({title,author,publisher})  ;
+   shelf(); 
 }
 
 addNewBook.prototype = Object.create(Book.prototype);
+
+// add books to shelves
+
+function shelf(){
+   
+   i = (myLibrary.length-1)%6;
+   console.log(i);
+   console.log(myLibrary[i].title);
+   idNamer = "title"+(1+i);
+   
+   document.getElementById(idNamer).innerText = myLibrary[myLibrary.length-1].title;
+
+   idNamer = "author"+(1+i);
+   document.getElementById(idNamer).innerText = myLibrary[myLibrary.length-1].author;
+
+   idNamer = "publisher"+(1+i);
+   document.getElementById(idNamer).innerText = myLibrary[myLibrary.length-1].publisher;
+
+   idNamer = "book"+(1+i);
+   document.getElementById(idNamer).style.visibility = "visible";
+  
+   
+}
 
