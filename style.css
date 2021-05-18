@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap');
+@import url("https://fonts.google.com/icons?selected=Material%20Icons%20Round%3Adisabled_by_default");
+
+body {
+
+    padding: 0;
+    margin: 0;
+    font-family: "Cutive Mono" , sans-serif;
+    background: #ccf2f4;
+
+
+}
+
+footer {
+	
+	text-align: center;
+	font-size: 1rem;
+	font-weight: 700;
+	padding: 2rem;
+
+}
+
+header {
+	text-align: center;
+	font-size: 2rem;
+	font-weight: 700;
+	padding-top: 4rem;
+}
+
+.main-container {
+	display: grid;
+    grid-template: 25rem / auto auto auto auto auto auto;
+	grid-gap: 0.5rem;
+    padding: 0.5rem;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	margin: 5rem auto;
+	background-color: rgba(0, 0, 0, 0.164);
+	height: 25rem;
+	width: 50rem;
+	border-radius: 1rem; 
+    
+}
+
+.form-container {
+
+	display: grid;
+	grid-template: 2rem / auto auto;
+	grid-gap: 0.3rem;
+	padding-bottom: 5rem;
+	
+	justify-content: center;
+}
+
+
+#book {
+	
+    text-align: center;
+    
+    
+    background: #f9f3f386;
+    border-radius: 1rem;
+    box-shadow: 2px 3px 3px 0px rgba(0,0,0,0.5);
+	cursor: pointer;
+    transition: all .15s ease-in-out;
+	height: 24rem;
+	width: 8rem;
+	
+
+}
+
+#title {
+	font-weight: 600;
+	font-size: 1.1rem;
+	height: 3rem;
+}
+
+#author {
+	font-style: italic;
+	font-size: 1rem;
+	height: 3rem;
+}
+#tpubl{
+	
+	height: 3rem;
+}
+
+button {
+	text-align: center;
+	margin: 0.1rem;
+	
+}
+
+button:hover {
+
+	color: red;
+}
+
+#rmvButton {
+
+	font-family: 'Material Icons', Courier, monospace;
+	font-size: 2rem;
+	padding: 0;
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+	height: 3rem;
+}
+
+#markButton {
+
+	padding: 0;
+	font-size: 0.8rem;
+	cursor: pointer;
+	height: 2rem;
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="1de-a">
+    <title>Bookshelf</title>
+	<link rel="icon" type="image/png" href="pics/icon.png"/>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
+
+</head>
+<body>
+	<header>A Simple Bookshelf</header>
+<div class="main-container">
+	<div id="book"><p id=title>The Hobbit</p>
+		<p id="author">J.R.R. Tolkien</p>		
+		<p id="pages">427 pgs</p>
+		<p id="read">Not Read Yet</p>
+		<button id="markButton">Mark as Read</button>
+		<button id="rmvButton"><span class="material-icons-round">disabled_by_default</span></i></button>
+	</div>
+	<div id="book"><p id=title>1984</p>
+		<p id="author">George Orwell</p>		
+		<p id="publ">Can</p>
+		<p id="read">Not Read Yet</p>
+		<button id="markButton">Mark as Read</button>
+		<button id="rmvButton"><span class="material-icons-round">disabled_by_default</span></i></button>
+	</div>
+	<div id="book"><p id=title>Parfümün Dansı</p>
+		<p id="author">Tom Robbins</p>		
+		<p id="publ">Ayrıntı</p>
+		<p id="read">Not Read Yet</p>
+		<button id="markButton">Mark as Read</button>
+		<button id="rmvButton"><span class="material-icons-round">disabled_by_default</span></i></button>
+	</div>
+	<div id="book"><p id=title>Şeker Portakalı</p>
+		<p id="author">J.M.De Vasconcelos</p>		
+		<p id="publ">Can</p>
+		<p id="read">Not Read Yet</p>
+		<button id="markButton">Mark as Read</button>
+		<button id="rmvButton"><span class="material-icons-round">disabled_by_default</span></i></button>
+	</div>
+	<div id="book"><p id=title>Genç Werther</p>
+		<p id="author">Wolfgang Goethe</p>		
+		<p id="publ">İş Kültür</p>
+		<p id="read">Not Read Yet</p>
+		<button id="markButton">Mark as Read</button>
+		<button id="rmvButton"><span class="material-icons-round">disabled_by_default</span></i></button>
+	</div>
+	<div id="book"><p id=title>Tragedyanın Doğuşu</p>
+		<p id="author">Friedrich Nietzsche</p>		
+		<p id="publ">İş Kültür</p>
+		<p id="read">Not Read Yet</p>
+		<button id="markButton">Mark as Read</button>
+		<button id="rmvButton"><span class="material-icons-round">disabled_by_default</span></i></button>
+	</div>
+</div>
+<div class="form-container">		
+	<div><input type="text" placeholder="Book Name" id="inputTitle"></div>
+	<div><input type="text" placeholder="Author" id="inputAuthor"></div>
+	<div><input type="text" placeholder="Publisher" id="inputPublisher"></div>
+	<button onclick="addNewBook()">Add New Book</button>
+</div>
+
+<footer>
+    <p>Bookshelf by 1de-a</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
+
