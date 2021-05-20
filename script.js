@@ -148,6 +148,7 @@ function removeBook(a) {
    myLibrary.splice(a,1);
    organize();
    store();
+   total();
 }
 
 
@@ -172,7 +173,7 @@ else if (myLibrary[a].isRead == false) {
 }
 
 organize();
-store()
+store();
 
 }
 
