@@ -47,8 +47,9 @@ h1{
 	box-shadow: 4px 5px 5px 1px rgba(0,0,0,0.5);
 	
 	width: 50rem;
+	
 	border-radius: 1rem; 
-    
+    z-index: -1;
 }
 
 .form-container {
@@ -100,6 +101,7 @@ h1{
 .publisher{
 	
 	height: 3rem;
+	font-size: 1rem;
 }
 .read{
 	
@@ -110,7 +112,7 @@ h1{
 
 button {
 	text-align: center;
-	margin: 0.3rem;
+	margin: .3rem;
 	
 }
 
@@ -200,7 +202,7 @@ button:hover {
 	background-color: rgb(177, 209, 209);
 	box-shadow: 4px 5px 5px 1px rgba(0,0,0,0.5);
 	justify-self:end;
-	grid-column: 2;
+	grid-column: 3;
 }
 
 #addBook:hover {
