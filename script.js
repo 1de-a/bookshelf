@@ -8,6 +8,14 @@ let para;
 let main;
 let newDiv;
 
+const myArrayFromLocalStorage = localStorage.getItem('mem');
+if (myArrayFromLocalStorage && myArrayFromLocalStorage.length) {
+myLibrary = JSON.parse(myArrayFromLocalStorage);
+organize()
+}
+
+
+
 document.getElementById("info").innerText = "In your bookshelf you have "+myLibrary.length +" books.";
 
 function total() {
@@ -51,6 +59,7 @@ function addNewBook() {
    
    organize();
    total();
+   store();
 
 
 }
@@ -175,6 +184,7 @@ function removeBook(a) {
 
    myLibrary.splice(a,1);
    organize();
+   store();
 }
 
 
@@ -196,7 +206,14 @@ else if (myLibrary[a].isRead == false) {
 
 }
 
-organize()
+organize();
+store()
 
 }
 
+function store() {
+
+   
+  localStorage.setItem('mem', JSON.stringify(myLibrary));
+   
+}
